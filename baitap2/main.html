@@ -21,6 +21,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 100%;
             max-width: 800px;
+            background-color: #4CAF50;
         }
         .form-group {
             margin-bottom: 15px;
@@ -32,7 +33,7 @@
             flex: 0 0 150px;
             margin-bottom: 0;
             font-weight: bold;
-            text-align: right;
+            text-align: left;
             padding-right: 10px;
         }
         .form-group input,
@@ -45,7 +46,7 @@
         }
         .form-group input[type="radio"] {
             width: auto;
-            margin-right: 5px;
+            margin-right: 10px;
         }
         .gender-group {
             display: flex;
@@ -80,11 +81,14 @@
             display: flex;
             justify-content: flex-end;
         }
+        .h2{
+            background-color: aqua;
+        }
     </style>
 </head>
 <body>
     <div class="form-container">
-        <h2>Đăng ký học viên</h2>
+        <h2 class="h2">Đăng ký học viên</h2>
         <form action="#" method="post">
             <div class="form-group">
                 <label for="fullname">Họ và tên:</label>

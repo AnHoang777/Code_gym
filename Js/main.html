@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay Đổi Màu Nút Like</title>
+    <style>
+        /* CSS để thiết lập màu nền của nút */
+        #likeButton {
+            background-color: #008CBA; /* Màu nền mặc định */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        /* CSS để thiết lập màu nền của nút khi được nhấn */
+        #likeButton.liked {
+            background-color: #4CAF50; /* Màu nền khi nút được nhấn */
+        }
+    </style>
+</head>
+<body>
+    <button id="likeButton">Like</button>
+
+    <!-- Nhúng file JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
