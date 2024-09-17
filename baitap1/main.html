@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sở thích của bạn</title>
+    <style>
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            border: 2px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: chocolate;
+            padding: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .form-group label {
+            width: 20%; /* Căn chỉnh độ rộng của nhãn */
+            margin-right: 10px;
+        }
+        .form-group input[type="text"], .form-group input[type="email"] {
+            width: 80%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .checkbox-group div {
+            flex: 1 1 30%; /* Mỗi ô checkbox chiếm khoảng 30% chiều rộng */
+        }
+        .buttons {
+            text-align: center;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Div chứa tiêu đề -->
+        <div class="header">
+            <h1>Sở thích của bạn</h1>
+        </div>
+
+        <!-- Div chứa thông tin còn lại -->
+        <div class="form-content">
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="name">Họ tên:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Sở thích của bạn:</label>
+                    <div class="checkbox-group">
+                        <div>
+                            <input type="checkbox" id="sports" name="hobbies" value="Thể thao">
+                            <label for="sports">Thể thao</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="web" name="hobbies" value="Lướt web">
+                            <label for="web">Lướt web</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="travel" name="hobbies" value="Du lịch">
+                            <label for="travel">Du lịch</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="music" name="hobbies" value="Âm nhạc">
+                            <label for="music">Âm nhạc</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="gaming" name="hobbies" value="Chơi game">
+                            <label for="gaming">Chơi game</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="reading" name="hobbies" value="Đọc sách">
+                            <label for="reading">Đọc sách</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="cinema" name="hobbies" value="Điện ảnh">
+                            <label for="cinema">Điện ảnh</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button type="submit">Gửi thông tin</button>
+                    <button type="reset">Nhập lại</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
