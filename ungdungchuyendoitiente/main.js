@@ -17,7 +17,7 @@ function convertCurrency() {
         result = '';
 
         for (const [key, value] of Object.entries(rates)) {
-            result += `${amount} ${currency} = ${(amount * value).toFixed(2)} ${key}<br>`;
+            result += `${amount} ${currency} = ${(amount * value).toFixed(2)} ${key}<br>`; //lấy số nhập vào và đơn vị ${amount} ${currency} = số đó nhân với value 23000/0.85 ${(amount * value) và lấy 2 số thập phân toFixed(2)
         }
     }
 

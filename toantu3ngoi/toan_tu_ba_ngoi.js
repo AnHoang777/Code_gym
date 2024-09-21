@@ -1,7 +1,8 @@
+let a = +prompt("Nhập số điểm cuối module")
 var course = {
-    name: "Javascript",
-    Coin: 0
+    name: "Điểm thi cuối khóa",
+    Coin: a
 };
-
-var result = course.Coin > 0 ? `${course.Coin} Coins` : 'Miễn Phí';
-console.log(result); // Kết quả: '250 Coins'
+var result = course.Coin >= 75 ? `${course.Coin} Qua Môn` : 'Tạch';
+console.log(result);
+alert(result);
