@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển Đổi Tiền Tệ</title>
+    <script src ="main.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        input { width: 100px; margin: 5px; }
+        select { margin: 5px; }
+        button { margin: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Chuyển Đổi Tiền Tệ</h1>
+    <input type="number" id="amount" placeholder="Số tiền">
+    <select id="currency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="VND">VND</option>
+    </select>
+    <button onclick="convertCurrency()">Chuyển Đổi</button>
+    <h2 id="result">Kết quả: </h2>
+</body>
+</html>
