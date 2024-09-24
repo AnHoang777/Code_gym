@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #0ae7dc;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e93305;
+    transition: background-color 0.3s;
+}
+
+label:hover {
+    background-color: #48da0f; /* Hiệu ứng hover */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px; /* Khoảng cách giữa checkbox và nhãn */
+}

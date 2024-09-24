@@ -1,48 +1,20 @@
+const checkbox1 = document.getElementById('goodCheckbox');
+const checkbox2 = document.getElementById('fastCheckbox');
+const checkbox3 = document.getElementById('cheapCheckbox');
 
-        let buttongood = true;
-        let buttonfast = true;
-        let buttoncheap = true;
-        function goodColor(button) {
-            const cheapButton = document.querySelector('.cheap'); // Tìm nút "Cheap"
-            if (buttongood){
-            button.style.backgroundColor = "yellow"; // Đổi màu nền thành vàng
-            button.style.color = "black"; // Đổi màu chữ thành đen
-            cheapButton.style.backgroundColor = "lightgreen"; // Đổi màu nền thành vàng
-            }
-            else{
-                button.style.backgroundColor = "lightgreen"; // Đổi màu nền thành vàng
-                button.style.color = "white"; // Đổi màu chữ thành đen
-                cheapButton.style.backgroundColor = "rgb(15, 45, 218)";
-                cheapButton.style.Color = "black";
-            }
-            buttongood =!buttongood;
+function checkCheckboxes() {
+    const checkedCount = [checkbox1.checked, checkbox2.checked, checkbox3.checked].filter(Boolean).length; //mảng, lọc giá trị và đếm 
+
+    if (checkedCount > 2) {
+        alert('Đã có 2 lựa chọn bỏ 1 trong 2 cái đã chọn để có thể chọn tiếp');
+        this.checked = false; // Bỏ chọn checkbox vừa được chọn
+    }  else {
+        if (event.target.checked) {
+            alert("bạn có chắc chắn chọn nó không?");
         }
-        function fastColor(button) {
-            const goodButton = document.querySelector('.good'); // Tìm nút "Cheap"
-            if (buttonfast){
-            button.style.backgroundColor = "yellow"; // Đổi màu nền thành vàng
-            button.style.color = "black"; // Đổi màu chữ thành đen
-            goodButton.style.backgroundColor = "#A52A2A"; // Đổi màu nền thành vàng
-            }
-            else{
-                button.style.backgroundColor = "lightgreen"; // Đổi màu nền thành vàng
-                button.style.color = "white"; // Đổi màu chữ thành đen
-                goodButton.style.backgroundColor = "yellow"; // Đổi màu nền thành vàng
-                goodButton.style.color = "black"; // Đổi màu chữ thành đen
-            }
-            buttonfast =!buttonfast;
-        }
-        function cheapColor(button) {
-            const fastButton = document.querySelector('.fast'); // Tìm nút "Cheap"
-            if (buttoncheap){
-            button.style.backgroundColor = "#FFA500"; // Đổi màu nền thành vàng
-            button.style.color = "black"; // Đổi màu chữ thành đen
-            fastButton.style.backgroundColor = "black"; // Đổi màu nền thành vàng
-            }
-            else{
-                button.style.backgroundColor = "blue"; // Đổi màu nền thành vàng
-                button.style.color = "black"; // Đổi màu chữ thành đen
-                fastButton.style.backgroundColor = "#FFC0CB";
-            }
-            buttoncheap =!buttoncheap;
-        }
+    }
+}
+
+checkbox1.addEventListener('change', checkCheckboxes);
+checkbox2.addEventListener('change', checkCheckboxes);
+checkbox3.addEventListener('change', checkCheckboxes);
